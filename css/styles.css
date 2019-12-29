@@ -1,3 +1,4 @@
+
 body {
   font-family: "Montserrat";
 }
@@ -29,82 +30,128 @@ h3 {
   margin: 0;
 }
 
-.container {
-  padding: 3% 10%;
-}
-
-/* ----------Navigation Bar--------- */
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.navbar {
-  padding: 0 0 7% 0;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
 /* ------- Title Section--------- */
 .title {
   background-color: #ff4c68;
   color: #fff;
 }
-
-.download-button {
-  margin: 10% 2.5%;
+.container {
+  padding: 3% 10%;
 }
-
 .phone-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+}
+.download-button {
+  margin: 10% 2.5%;
+}
+/*-----------MEDIA SCREEN PROPERTIES--------------*/
+@media screen and (max-width: 1028px) {
+  .phone-image {
+    width: 60%;
+    position: static;
+    transform: rotate(0deg);
+    right: 20%;
+  }
+  .title{
+    text-align: center;
+  }
+}
+/* ---------------Navigation Bar-------------- */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  padding: 0 0 7% 0;
+}
+.nav-item {
+  padding: 0 18px;
 }
 
-/* ------Features-------- */
+/* ------------Features--------------- */
 .features {
   padding: 2% 10%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
-
-.fas {
+.feature-icon  {
   color: #ef8172;
   padding: 0;
 }
-
-.fas:hover {
+.feature-icon:hover {
   color: #ff4c68;
 }
-
 .feature {
   padding: 8% 5%;
   margin: 0;
 }
-
 /* -----------------Testimonials------------- */
 .testimonials {
   text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
-
 .testimonial-image {
   border-radius: 100%;
   margin-right: 0.5rem;
   width: 12%;
 }
-.testimonial{
+.testimonial {
   padding: 10% 15%;
 }
 /* ----------------Press----------------- */
-.press{
+.press {
   background-color: #ef8172;
   padding: 0 10%;
   text-align: center;
   padding-bottom: 2rem;
 }
-.press-icon{
+.press-icon {
   width: 15%;
   margin: 1.4rem;
+}
+
+/* --------------PRICING------------ */
+.pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+/*-------------BOTTOM SECTION----------*/
+.bottom-section{
+  background-color: #ff4c68;
+  text-align:center;
+  padding: 2rem;
+}
+.bottom-section-header{
+  color: #fff;
+  padding: 3rem 22%;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+.bottom-download-button{
+  margin: 0 1rem 2rem;
+}
+/* ---------------FOOTER---------------- */
+.footer{
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff;
+}
+.footer-copyright{
+  margin-top:1rem;
+}
+.footer-icon{
+  margin: 0 0.5rem;
+}
+.footer-anchor{
+  text-decoration: none;
+  color: #000;
 }
